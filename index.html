@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!--
+        Customize the content security policy in the meta tag below as needed. Add 'unsafe-inline' to default-src to enable inline JavaScript.
+        For details, see http://go.microsoft.com/fwlink/?LinkID=617521
+    -->
+    <link rel="shortcut icon" href="#" />
+    <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">-->
+
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase.js"></script>
+
+    <title>nullPTR</title>
+    </head>
+<body>
+    <h1 class="register-title">HEALTH BOT</h1>
+    <form class="register">
+        <div class="register-switch">
+            <input type="radio" name="sex" value="F" id="sex_f" class="register-switch-input" checked>
+            <label for="sex_f" class="register-switch-label">Female</label>
+            <input type="radio" name="sex" value="M" id="sex_m" class="register-switch-input">
+            <label for="sex_m" class="register-switch-label">Male</label>
+        </div>
+
+        <input id="email" type="email" class="register-input" placeholder="Email address">
+        <input id="password" type="password" class="register-input" placeholder="Password">
+        <input id="age" type="number" class="register-input" placeholder="Age">
+        <input id="weight" type="number" class="register-input" placeholder="Weight (kg)">
+        <input id="height" type="number" class="register-input" placeholder="Height (cm)"><br />
+
+        <div class="Purpose-switch">
+            <input type="radio" name="Purpose" value="L" id="Purpose_Lose" class="Purpose-switch-input" checked>
+            <label for="Purpose_lose" class="Purpose-switch-label">Lose</label>
+            <input type="radio" name="Purpose" value="S" id="Purpose_Stay" class="Purpose-switch-input">
+            <label for="Purpose_stay" class="Purpose-switch-label">Stay</label>
+            <input type="radio" name="Purpose" value="G" id="Purpose_Gain" class="Purpose-switch-input">
+            <label for="Purpose_gain" class="Purpose-switch-label">Gain</label>
+        </div>
+
+        <input id="addUser" value="LET'S CHAT!" class="register-button">
+    </form>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script src="scripts/startScreen.js"></script>
+    <script type="text/javascript" src="scripts/index.js"></script>
+</body>
+</html>
